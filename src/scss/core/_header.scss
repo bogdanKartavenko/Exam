@@ -13,7 +13,7 @@
 
   .header__title {
     @include media ($screen-tablet) {
-      width: 312px;
+      width: 334px;
     height: 40px;
     color: $white;
     font-family: "Josefin Sans";
@@ -23,7 +23,7 @@
     letter-spacing: 4.8px;
     margin: 0 auto;
     }
-    width: 300px;
+    width: 312px;
     height: 40px;
     color: $white;
     font-family: "Josefin Sans";
