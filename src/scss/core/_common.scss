@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap');
+
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button,
+textarea,
+select {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a, button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: inline-flex;
+  text-decoration: none;
+}
+

@@ -1,0 +1,268 @@
+.header {
+  @include media ($screen-tablet) {
+    background: url(/assets/images/header.png) no-repeat;
+    display: block;
+    text-align: center;
+    padding-top: 265px;
+  }
+  background: url(/assets/images/header.png) no-repeat;
+  display: block;
+  text-align: center;
+  padding-top: 165px;
+  min-height: 100vh;
+
+  .header__title {
+    @include media ($screen-tablet) {
+      width: 312px;
+    height: 40px;
+    color: $white;
+    font-family: "Josefin Sans";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 4.8px;
+    margin: 0 auto;
+    }
+    min-width: 300px;
+    height: 40px;
+    color: $white;
+    font-family: "Josefin Sans";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 4.8px;
+    margin: 0 auto;
+  }
+  &__subtitle {
+    @include media ($screen-tablet) {
+      width: 337px;
+    height: 21px;
+    color: $white;
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 26px;
+    letter-spacing: 6.82px;
+    margin: 0 auto;
+    }
+    min-width: 300px;
+    height: 21px;
+    color: $white;
+    font-family: "Josefin Sans";
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 26px;
+    letter-spacing: 6.82px;
+    margin: 0 auto;
+  }
+
+  &__form {
+    @include media ($screen-tablet) {
+      max-width: 650px;
+      height: 60px;
+      display: flex;
+      margin: 50px auto 120px auto;
+    }
+    max-width: 650px;
+    height: 60px;
+    display: flex;
+    margin: 50px auto 120px auto;
+    display: block;
+  }
+  &__input {
+    @include media ($screen-tablet) {
+      width: 500px;
+    height: 60px;
+    background-color: $white;
+    display: block;
+    text-align: center;
+    border: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    }
+    min-width: 300px;
+    height: 60px;
+    background-color: $white;
+    display: block;
+    text-align: center;
+    border: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    margin: 0 auto;
+  }
+  &__button {
+    @include media ($screen-tablet) {
+      width: 150px;
+    height: 60px;
+    border: 2px solid $white;
+    background-color: $dark_blue;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-family: Aleo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1.4px;
+    margin: 0;
+    &--svg {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+    }
+    }
+    min-width: 200px;
+    height: 60px;
+    border: 2px solid $white;
+    background-color: $dark_blue;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-family: Aleo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1.4px;
+    margin: 10px auto;
+    &--svg {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+    }
+  }
+
+  &__scroll {
+    width: 102px;
+    height: 40px;
+    margin: 0 auto;
+    &--text {
+      width: 102px;
+      height: 11px;
+      color: $white;
+      font-family: "Josefin Sans";
+      font-size: 14px;
+      font-weight: 200;
+      line-height: 26px;
+      letter-spacing: 2.8px;
+      margin-bottom: 15px;
+    &:hover {
+      color: red;
+    }
+    }
+    &--svg {
+      width: 15px;
+      height: 8px;
+    }
+  }
+  &__nav {
+    @include media ($screen-tablet) {
+      background-color: $dark_blue;
+    height: 80px;
+    margin-top: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    background-color: $dark_blue;
+    height: 200px;
+    margin-top: 135px;
+    display: block;
+  }
+  &__nav_container {
+    @include media ($screen-tablet){
+      width: 1110px;
+      height: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    min-width: 300px ;
+    height: 180px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+  }
+  &__nav_title {
+    @include media ($screen-tablet) {
+      width: 156px;
+    height: 20px;
+    color: $white;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    margin: 0;
+    }
+    width: 168px;
+    height: 20px;
+    color: $white;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    margin: 0 auto;
+  }
+  &__list {
+    @include media ($screen-tablet) {
+      width: 525px;
+    height: 40px;
+    display: flex;
+
+    &--nav {
+      width: 10px;
+      height: 30px;;
+      color: $white;
+      font-family: Aleo;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-right: 42px;
+      justify-content: end;
+      border-top: 1px solid transparent;
+      transition: 0.5s;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+      &:hover {
+        border-top: 1px solid $white;
+      
+      }
+    }
+    }
+    min-width: 300px;
+    height: 180px;
+    display: block;
+
+    &--nav {
+      width: 300px;
+      height: 36px;
+      color: $white;
+      font-family: Aleo;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      margin: 10px auto 0 auto; 
+      justify-content: end;
+      border-top: 1px solid transparent;
+      transition: 0.5s;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+      &:hover {
+        border-top: 1px solid $white;
+      
+      }
+    }
+  }
+}

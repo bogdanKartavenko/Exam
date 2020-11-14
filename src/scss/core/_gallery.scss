@@ -1,0 +1,140 @@
+.gallery {
+  background: url(/assets/images/gallery.png) no-repeat;
+  display: block;
+  padding-top: 120px;
+
+  &__container {
+      width: 1110px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px auto 120px auto;
+  }
+  &__container_text {
+    width: 530px;
+    height: 349px;
+    margin-top: 84px;
+  }
+  &__title {
+    width: 260px;
+    height: 33px;
+    color: $white;
+    font-family: Aleo;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 6px;
+  }
+  &__subtitle {
+    width: 530px;
+    color: $light_gray;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    &--top {
+        width: 530px;
+    color: $light_gray;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+        margin: 62px 0 30px 0;
+    }
+    &--bottom {
+        width: 530px;
+    color: $light_gray;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    margin-bottom: 48px;
+    }
+  }
+  &__container_images {
+    width: 475px;
+    height: 445px;
+    display: block;
+    margin-left: 105px;
+  }
+  &__container_img2 {
+    width: 350px;
+    height: 220px;
+      margin: 5px 0 0 125px;
+      transition: 0.5s;
+      &:hover {
+        box-shadow:
+          1px 1px $lihgt_blue,
+          2px 2px $lihgt_blue,
+          3px 3px $lihgt_blue,
+          4px 4px $lihgt_blue,
+          5px 5px $lihgt_blue,
+          6px 6px $lihgt_blue,
+          7px 7px $lihgt_blue;
+        -webkit-transform: translateX(-7px);
+        transform: translateX(-7px);
+      }
+  }
+  &__container_img {
+    width: 350px;
+    height: 220px;
+    transition: 0.5s;
+    &:hover {
+      box-shadow:
+        1px 1px $lihgt_blue,
+        2px 2px $lihgt_blue,
+        3px 3px $lihgt_blue,
+        4px 4px $lihgt_blue,
+        5px 5px $lihgt_blue,
+        6px 6px $lihgt_blue,
+        7px 7px $lihgt_blue;
+      -webkit-transform: translateX(-7px);
+      transform: translateX(-7px);
+    }
+    &--img_top {
+        width: 350px;
+    height: 220px;
+    }
+    &--img_bottom {
+        width: 350px;
+    height: 220px;
+    
+    }
+  }
+  
+
+  &__futer {
+      background: $light_black;
+    height: 337px;
+    display: flex;
+  }
+  &__list {
+      width: 975px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+  }
+  &__list_icon {
+      width: 220px;
+      display: block;
+      text-align: center;
+      margin-top: 99px;
+      &--svg {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 31px;
+      }
+      &--text {
+        width: 220px;
+        height: 34px;
+        color: $light_gray;
+        font-family: Aleo;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+      }
+  }
+}
