@@ -1,7 +1,7 @@
 .button {
 width: 225px;
 height: 60px;
-background-color: $dark_blue;
+background-color: $blue;
 color: $white;
 font-family: Aleo;
 font-size: 16px;
@@ -18,29 +18,29 @@ line-height: 26px;
 letter-spacing: 1.2px;
 cursor: pointer;
 display: inline-block;
-  border-radius: 0.3em;
   transition: all 0.2s ease-in-out;
   position: relative;
   overflow: hidden;
+  z-index: 3;
 &:before {
     content: "";
-    background-color: rgba(255,255,255,0.5);
+    background-color: $dark_blue;
     height: 100%;
-    width: 3em;
+    width: 100%;
     display: block;
     position: absolute;
     top: 0;
-    left: -4.5em;
-    transform: skewX(-45deg) translateX(0);
+    right: -5em;
+    transform: skewX(45deg) translateX(0);
     transition: none;
+    z-index: -1;
   }
   &:hover {
     background-color: $blue;
     color: $white;
-    border-bottom: 4px solid darken($lihgt_blue, 10%);
     &:before {
-      transform: skewX(-45deg) translateX(13.5em);
-     transition: all 0.5s ease-in-out;
+      transform: skewX(45deg) translateX(13.5em);
+     transition: all 0.9s ease-in-out;
     }
   }
 }
