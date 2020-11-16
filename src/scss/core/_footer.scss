@@ -45,11 +45,13 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    &--bracket {
-      color: $dark_blue;
+    
+  }
+  &__bracket {
+    color: $dark_blue;
       font-size: 36px;
+      font-family: "Josefin Sans";
       margin-right: 5px;
-    }
   }
 
   &__contact {

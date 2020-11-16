@@ -64,35 +64,17 @@
     width: 350px;
     height: 220px;
       margin: 5px 0 0 125px;
-      transition: 0.5s;
-      &:hover {
-        box-shadow:
-          1px 1px $lihgt_blue,
-          2px 2px $lihgt_blue,
-          3px 3px $lihgt_blue,
-          4px 4px $lihgt_blue,
-          5px 5px $lihgt_blue,
-          6px 6px $lihgt_blue,
-          7px 7px $lihgt_blue;
-        -webkit-transform: translateX(-7px);
-        transform: translateX(-7px);
+      transition: 1s;
+      &:hover :hover {
+        transform: scale(1.2);
       }
   }
   &__container_img {
     width: 350px;
     height: 220px;
-    transition: 0.5s;
+    transition: 1s;
     &:hover {
-      box-shadow:
-        1px 1px $lihgt_blue,
-        2px 2px $lihgt_blue,
-        3px 3px $lihgt_blue,
-        4px 4px $lihgt_blue,
-        5px 5px $lihgt_blue,
-        6px 6px $lihgt_blue,
-        7px 7px $lihgt_blue;
-      -webkit-transform: translateX(-7px);
-      transform: translateX(-7px);
+      transform: scale(1.2);
     }
     &--img_top {
         width: 350px;
