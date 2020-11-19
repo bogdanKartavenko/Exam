@@ -1,10 +1,25 @@
 .footer {
   background: url(/assets/images/footer.png) no-repeat;
   background-size: cover;
-  padding-top: 120px;
+  padding-top: 50px;
+  @include media ($screen-tablet) {
+    background: url(/assets/images/footer.png) no-repeat;
+  background-size: cover;
+  padding-top: 120px ;
+  }
 
   &__title {
-    width: 360px;
+    @include media {
+      width: 360px;
+    height: 33px;
+    color: $white;
+    font-family: Aleo;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 auto;
+    }
+    max-width: 360px;
     height: 33px;
     color: $white;
     font-family: Aleo;
@@ -15,20 +30,30 @@
   }
   &__container {
     background-color: $light_black;
-    width: 1110px;
-    height: 284px;
-    display: flex;
-    margin: 94px auto 200px auto;
+    max-width: 1110px;
+    display: block;
+    margin: 50px 10px 50px 10px;
+    @include media ($screen-tablet) {
+      background-color: $light_black;
+      width: 1110px;
+      height: 284px;
+      display: flex;
+      margin: 94px auto 200px auto;
+    }
   }
 
-  &__con_images,
+  
+  &__con_images {
+    max-width: 445px;
+    max-height: 284px;
+  }
   &__images {
-    width: 445px;
-    height: 284px;
-    margin-right: 60px;
+    width: 100%;
+
   }
   &__subtitle {
-    width: 130px;
+    @include media ($screen-tablet) {
+      width: 130px;
     height: 17px;
     color: $light_white;
     font-family: "Josefin Sans";
@@ -36,22 +61,49 @@
     font-weight: 400;
     line-height: 26px;
     margin: 50px 0 33px 0;
+    }
+    width: 130px;
+    height: 17px;
+    color: $light_white;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 50px auto 33px auto;
+  }
+  &__block_text {
+    @include media {
+      width: 551px;
+    height: 284px;
+    margin: 0 auto;
+    text-align: start;
+    }
+    text-align: center;
+    max-width: 551px;
+    margin: 0;
   }
   &__text {
-    width: 551px;
+    @include media {
+      width: 551px;
     height: 136px;
     color: $light_gray;
     font-family: "Josefin Sans";
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    
+    }
+    max-width: 551px;
+    color: $light_gray;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
   }
   &__bracket {
     color: $dark_blue;
       font-size: 36px;
       font-family: "Josefin Sans";
-      margin-right: 5px;
+     /// margin-right: 5px;
   }
 
   &__contact {
@@ -92,9 +144,15 @@
     height: 16px;
     display: flex;
     justify-content: space-around;
-    &--svg {
+  }
+    &__list-facebook, &__list-twitter, &__list-linkedia, &__list-youtube, &__list-pinterest {
       width: 16px;
       height: 16px;
+      fill: $white;
+      cursor: pointer;
+      &:hover {
+        fill: $dark_blue;
+      }
     }
-  }
+  
 }

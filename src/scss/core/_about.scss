@@ -1,20 +1,27 @@
 .about {
   background: url(/assets/images/about1.png) no-repeat;
   background-size: cover;
-  padding: 229px 0 100px 330px;
-  &__ccontainer {
+  @include flex(center, center, row);
+
+  &__container {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    @include media($screen-tablet) {
       width: 1110px;
       height: 371px;
+      margin: 229px 0 100px 0;
+    }
   }
   &__container_block {
-    width: 540px;
-    height: 371px;
+    max-width: 540px;
+    height: auto;
     background-color: $black;
     opacity: 0.9;
     padding: 50px 32px 50px 30px;
   }
   &__subtitle {
-    width: 56px;
+    max-width: 56px;
     height: 19px;
     color: $light_gray;
     font-family: "Josefin Sans";
@@ -24,7 +31,7 @@
     letter-spacing: 1.5px;
   }
   &__title {
-    width: 230px;
+    max-width: 230px;
     height: 17px;
     color: $white;
     font-family: "Josefin Sans";
@@ -34,8 +41,8 @@
     margin: 30px 0 29px 0;
   }
   &__text {
-    width: 478px;
-    height: 68px;
+    max-width: 478px;
+    min-height: 68px;
     color: $light_gray;
     font-family: "Josefin Sans";
     font-size: 16px;
